@@ -1,0 +1,19 @@
+<html>
+<script>
+var list=[1,8,4,6,7,5,];
+function callback(list){
+	var newList=[];
+	for (var i=0;i<list.length;i++){
+	if(list[i]>=5)
+	newList.push(list[i]);
+	}
+	return newList;
+}
+function filter(list,callback){
+	return callback(list);
+
+}
+var filterd = filter(list, callback);
+console.log (filterd);
+</script>
+</html>

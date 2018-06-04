@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>
+ZIPCODE
+</title>
+<body>
+	<h4>please enter your ZIP CODE</h4>	
+Zipcode:<input ='number' id='zipCode'/>
+<input type='submit' name='submit' onclick='Javascript: funcValidateUSZip();'/>
+<script>
+	function funcValidateUSZip() {
+		var zip = document.getElementById('zipCode');
+var MyRegExp = /(^\d{6}$)/;
+if(!MyRegExp.test(zip.value)){
+	alert('please provide correct zipCode');
+	 return MyRegExp.test(zipCode);
+	
+}
+   
+else{
+	alert('Thankyou for providing your correct zipCode');
+}
+
+} 
+</script>
+</body>
+	</html>

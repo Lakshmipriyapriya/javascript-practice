@@ -1,0 +1,32 @@
+<html>
+<head>
+<title> Email</title>
+</head>
+<body>
+	
+<h4>please enter your MailId</h4>	
+Email:<input type='text' id='crtEmail'/>
+<input type='submit' name='submit' onclick='Javascript:checkEmail();'/>
+<script>
+
+
+function checkEmail() {
+
+    var email = document.getElementById('crtEmail');
+    var match = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+
+    if (!match.test(email.value)) {
+    alert('Please provide a valid email address');
+    email.focus;
+    return false;
+
+ }
+ else{
+ 	alert('thankyou');
+ 	return true;
+ }
+ 
+}</script>
+
+</body>
+</html>

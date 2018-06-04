@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>
+Aadhaar
+</title>
+<body>
+	<h4>please enter your Aadhaar number</h4>	
+AADHAAR NUMBER:<input ='number' id='aadhaar'/>
+<input type='submit' name='submit' onclick='Javascript: funcValidateUSAdr();'/>
+<script>
+	function funcValidateUSAdr() {
+		var aadr = document.getElementById('aadhaar');
+var MyRegExp = (/\d{4}-\d{4}-\d{4}/);
+if(!MyRegExp.test(aadr.value)){
+	alert('please provide correct aadhaar');
+	 return MyRegExp.test(aadhaar);
+	
+}
+   
+else{
+	alert('Thankyou for providing your correct aadhaar');
+}
+
+} 
+</script>
+</body>
+	</html>
